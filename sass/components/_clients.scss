@@ -1,0 +1,33 @@
+// Постоянные клиенты
+.business__heading {
+  color: $title-text-color;
+  @extend %font-700-36px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+.business__company {
+  display: flex;
+}
+.business__list:not(:last-child) {
+  margin-right: 30px;
+}
+.business__icon {
+  width: 170px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $social-text-color;
+  box-sizing: border-box;
+  border-radius: 4px;
+  fill: $social-text-color;
+  transition: fill 250ms $cubic-bezier, border-color 250ms $cubic-bezier;
+}
+.business__icon:hover,
+.business__icon:focus,
+.business__emblem:hover,
+.business__emblem:focus {
+  fill: $accent-color;
+  border-color: $accent-color;
+}

@@ -1,0 +1,59 @@
+// Наша команда
+.members {
+  color: $title-text-color;
+  background-color: $background-team-color;
+}
+.members__title {
+  @extend %font-700-36px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+.members__team {
+  display: flex;
+  justify-content: space-between;
+}
+.personal-card {
+  display: block;
+  padding: 30px 32px;
+  box-shadow: $card-shadow;
+  border-radius: 0px 0px 4px 4px;
+  background-color: $primary-background-color;
+}
+
+.personal-card__heading {
+  @extend %font-500-16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+.personal-card__label {
+  @extend %font-400-16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $primary-text-color;
+}
+
+.social {
+  display: flex;
+  margin-top: 16px;
+}
+.social__page:not(:last-child) {
+  margin-right: 10px;
+}
+.social__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  fill: $social-text-color;
+  border-radius: 50%;
+  transition: background-color 250ms $cubic-bezier, fill 250ms $cubic-bezier;
+}
+.social__icon:hover,
+.social__icon:focus {
+  background-color: $accent-color;
+  fill: $primary-background-color;
+}

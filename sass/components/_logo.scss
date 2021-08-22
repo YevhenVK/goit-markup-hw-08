@@ -1,0 +1,19 @@
+// Logo
+.logo {
+  @extend %font-700-26px;
+  color: $logo-color;
+  font-family: $font-Raleway;
+  font-style: normal;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  transition: color 250ms $cubic-bezier;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+  &-text {
+    color: $accent-color;
+  }
+}
+// End of Logo
