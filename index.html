@@ -14,6 +14,11 @@
 <body>
     <header class="header-page">
         <div class="container header-page__con">
+            <button class="menu-button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="icon-menu" width="40px" height="40px" aria-label="Переключатель мобильного меню">
+                    <use class="icon-menu" href="./img/sprite.svg#icon-menu_40px"></use>
+                </svg>
+            </button>
             <nav class="header-page__nav">
                 <a  class="logo" href="./index.html" lang="en"><span class="logo-text" >Web</span>Studio</a>
                 <ul class="site-nav list">
@@ -447,6 +452,24 @@
             </button>
         </div>
     </div>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-button js-close-menu" type="button">
+            <svg class="icon-close" width="40px" height="40px" aria-label="Переключатель мобильного меню">
+                <use class="icon-cross" href="./img/sprite.svg#icon-close-black"></use>
+            </svg>
+            <ul class="mobile-menu list">
+                <li><a href="./index.html" class="link">Студия</a></li>
+                <li><a href="./portfolio.html" class="link">Портфолио</a></li>
+                <li><a href="#" class="link">Контакты</a></li>
+                <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+                <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+            </ul>
+        </button>
+    </div>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 </html>
