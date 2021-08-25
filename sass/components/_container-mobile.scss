@@ -23,12 +23,12 @@ html {
   @media screen and (min-width: 480px) {
     width: 480px;
   }
-  // @media screen and (min-width: 768px) {
-  //   width: 768px;
-  // }
-  // @media screen and (min-width: 1200px) {
-  //   width: 1200px;
-  // }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 
 .section {
@@ -36,14 +36,14 @@ html {
     padding-top: 60px;
     padding-bottom: 60px;
   }
-  // @media screen and (min-width: 768px) {
-  //   padding-top: 60px;
-  //   padding-bottom: 60px;
-  // }
-  // @media screen and (min-width: 1200px) {
-  //   padding-top: 94px;
-  //   padding-bottom: 94px;
-  // }
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .list {
@@ -90,8 +90,8 @@ img {
   }
 }
 // End of Logo
-// Header
 
+// Header
 .menu-container {
   position: fixed;
   top: 0;
@@ -103,23 +103,27 @@ img {
   padding-bottom: 10px;
   background-color: yellow;
   z-index: 999;
+
   transform: translateX(100%);
+  transition: transform 250ms $cubic-bezier;
 }
 .menu-container.is-open {
   transform: translateX(0%);
 }
-
+.menu-container .menu-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 .menu-button {
   position: absolute;
   min-height: 40px;
   min-width: 40px;
-  display: flex;
   align-items: center;
   justify-content: center;
   top: 0;
   right: 0;
   margin: 0;
-  padding: 0;
   background-color: transparent;
   cursor: pointer;
   border: none;
@@ -127,41 +131,44 @@ img {
   outline: none;
 }
 
-@media (min-width: 768px) {
-  .menu-button {
+@media (max-width: 767px) {
+  .site-nav,
+  .contact-nav {
     display: none;
   }
 }
+@media (min-width: 768px) {
+  .menu-button,
+  .menu-container {
+    display: none;
+  }
+}
+
+.menu-button__close,
+.menu-button__menu {
+  fill: currentColor;
+  transition: color 250ms $cubic-bezier;
+}
+.menu-button__close:active,
+.menu-button__menu:active {
+  color: $accent-color;
+}
+// End of Header
 
 .menu-button:hover,
 .menu-button:focus {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-.menu-container .menu-button {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  color: #fff;
-}
+// .mobile-menu {
+//   padding: 0;
+//   margin: 0;
+//   list-style: none;
+// }
 
-.mobile-menu {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.mobile-menu .link {
-  // display: block;
-  padding: 10px;
-  color: red;
-  text-decoration: none;
-}
-// End of Header
-
-// @media (max-width: 767px) {
-//   .site-nav,
-//   .contact-nav {
-//     display: none;
-//   }
+// .mobile-menu .link {
+//   display: block;
+//   padding: 10px;
+//   color: red;
+//   text-decoration: none;
 // }

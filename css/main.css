@@ -36,10 +36,36 @@ html {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .section {
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -102,6 +128,10 @@ img {
   z-index: 999;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-container.is-open {
@@ -109,13 +139,16 @@ img {
           transform: translateX(0%);
 }
 
+.menu-container .menu-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 .menu-button {
   position: absolute;
   min-height: 40px;
   min-width: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -125,7 +158,6 @@ img {
   top: 0;
   right: 0;
   margin: 0;
-  padding: 0;
   background-color: transparent;
   cursor: pointer;
   border: none;
@@ -133,33 +165,34 @@ img {
   outline: none;
 }
 
-@media (min-width: 768px) {
-  .menu-button {
+@media (max-width: 767px) {
+  .site-nav,
+  .contact-nav {
     display: none;
   }
+}
+
+@media (min-width: 768px) {
+  .menu-button,
+  .menu-container {
+    display: none;
+  }
+}
+
+.menu-button__close,
+.menu-button__menu {
+  fill: currentColor;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-button__close:active,
+.menu-button__menu:active {
+  color: #2196f3;
 }
 
 .menu-button:hover,
 .menu-button:focus {
   background-color: rgba(0, 0, 0, 0.1);
-}
-
-.menu-container .menu-button {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  color: #fff;
-}
-
-.mobile-menu {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.mobile-menu .link {
-  padding: 10px;
-  color: red;
-  text-decoration: none;
 }
 /*# sourceMappingURL=main.css.map */
