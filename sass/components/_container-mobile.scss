@@ -199,11 +199,13 @@ img {
 }
 .mobile-socials {
   display: block;
-  margin-left: 40px;
+  margin-left: 30px;
   margin-top: 64px;
 }
 .mobile-socials__link {
-  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
   font-family: $font-Roboto;
   font-style: normal;
   font-weight: 500;
@@ -211,6 +213,9 @@ img {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196f3;
+  &:last-child {
+    border-right: none;
+  }
 }
 //
 //
@@ -322,3 +327,11 @@ img {
   color: $accent-color;
 }
 // End of Header
+
+// .content__title {
+//   display: block;
+//   padding: 20px 24px;
+//   border-right: 1px solid $thumb-border-color;
+//   border-bottom: 1px solid $thumb-border-color;
+//   border-left: 1px solid $thumb-border-color;
+// }
