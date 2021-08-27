@@ -99,7 +99,7 @@ img {
 // Header
 .menu-container {
   position: fixed;
-  // justify-content: flex-start;
+  display: block;
   top: 0;
   right: 0;
   width: 100%;
@@ -154,18 +154,19 @@ img {
 .menu-button__menu:active {
   color: $accent-color;
 }
+
+// Меню текст
+
 .mobile-menu {
   margin-top: 48px;
   margin-left: 24px;
 }
-// .mobile-menu__item:not(:first-child) {
-//   margin-top: 32px;
-// }
+
 .mobile-menu__nav {
   display: block;
+  padding: 16px;
   font-family: $font-Roboto;
   font-style: normal;
-  padding: 16px;
   font-weight: 500;
   font-size: 40px;
   line-height: 1.17;
@@ -173,9 +174,9 @@ img {
   color: $title-text-color;
 }
 .mobile-menu__tel {
-  padding: 16px;
   margin-top: 30%;
-  justify-content: space-between;
+  display: block;
+  padding: 16px;
 }
 .mobile-menu__link--active {
   font-family: $font-Roboto;
@@ -199,12 +200,14 @@ img {
 }
 .mobile-socials {
   display: block;
-  margin-left: 30px;
+  margin-left: 25px;
   margin-top: 64px;
 }
 .mobile-socials__link {
+  align-items: center;
+  flex-wrap: nowrap;
   padding-left: 10px;
-  padding-right: 10px;
+  padding-right: 9px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
   font-family: $font-Roboto;
   font-style: normal;
@@ -327,11 +330,3 @@ img {
   color: $accent-color;
 }
 // End of Header
-
-// .content__title {
-//   display: block;
-//   padding: 20px 24px;
-//   border-right: 1px solid $thumb-border-color;
-//   border-bottom: 1px solid $thumb-border-color;
-//   border-left: 1px solid $thumb-border-color;
-// }

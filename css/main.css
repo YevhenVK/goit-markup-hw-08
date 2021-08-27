@@ -127,6 +127,7 @@ img {
 
 .menu-container {
   position: fixed;
+  display: block;
   top: 0;
   right: 0;
   width: 100%;
@@ -201,9 +202,9 @@ img {
 
 .mobile-menu__nav {
   display: block;
+  padding: 16px;
   font-family: "Roboto";
   font-style: normal;
-  padding: 16px;
   font-weight: 500;
   font-size: 40px;
   line-height: 1.17;
@@ -212,11 +213,9 @@ img {
 }
 
 .mobile-menu__tel {
-  padding: 16px;
   margin-top: 30%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: block;
+  padding: 16px;
 }
 
 .mobile-menu__link--active {
@@ -244,13 +243,18 @@ img {
 
 .mobile-socials {
   display: block;
-  margin-left: 30px;
+  margin-left: 25px;
   margin-top: 64px;
 }
 
 .mobile-socials__link {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   padding-left: 10px;
-  padding-right: 10px;
+  padding-right: 9px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
   font-family: "Roboto";
   font-style: normal;
