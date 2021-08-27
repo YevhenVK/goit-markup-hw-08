@@ -127,7 +127,6 @@ img {
 
 .menu-container {
   position: fixed;
-  display: block;
   top: 0;
   right: 0;
   width: 100%;
@@ -195,14 +194,38 @@ img {
   color: #2196f3;
 }
 
-.mobile-menu {
-  margin-top: 48px;
-  margin-left: 24px;
+.menu-box {
+  padding: 48px 40px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mobile-socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mobile-menu__item {
+  display: block;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.mobile-menu__item:first-child {
+  padding-top: 0;
 }
 
 .mobile-menu__nav {
   display: block;
-  padding: 16px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -214,11 +237,9 @@ img {
 
 .mobile-menu__tel {
   margin-top: 30%;
-  display: block;
-  padding: 16px;
 }
 
-.mobile-menu__link--active {
+.mobile-menu__tel {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -229,11 +250,6 @@ img {
 }
 
 .mobile-menu__mail {
-  padding: 16px;
-  margin-bottom: 32px;
-}
-
-.mobile-menu__mail--link {
   font-weight: 500;
   font-size: 24px;
   line-height: 1.16;
@@ -241,20 +257,10 @@ img {
   color: #757575;
 }
 
-.mobile-socials {
-  display: block;
-  margin-left: 25px;
-  margin-top: 64px;
-}
-
 .mobile-socials__link {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  padding-left: 10px;
-  padding-right: 9px;
+  margin: 0;
+  padding-left: 9px;
+  padding-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
   font-family: "Roboto";
   font-style: normal;
@@ -267,6 +273,10 @@ img {
 
 .mobile-socials__link:last-child {
   border-right: none;
+}
+
+.mobile-socials__link:first-child {
+  padding-left: 0;
 }
 
 .logo {
