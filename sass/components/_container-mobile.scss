@@ -98,7 +98,9 @@ img {
 
 // Header
 .menu-container {
+  display: block;
   position: fixed;
+  justify-content: flex-start;
   top: 0;
   right: 0;
   width: 100%;
@@ -164,11 +166,13 @@ img {
   margin-top: 48px;
   margin-left: 40px;
 }
-.mobile-menu__text {
+.mobile-menu__item {
   display: block;
-  margin: 0;
-  padding: 0;
-  justify-content: flex-start;
+  &:not(:first-child) {
+    margin-top: 32px;
+  }
+}
+.mobile-menu__text {
   font-family: $font-Roboto;
   font-style: normal;
   font-weight: 500;
@@ -176,13 +180,31 @@ img {
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: $title-text-color;
-  &:not(:first-child) {
-    margin-top: 32px;
-  }
 }
-.mobile-menu__mail {
+.mobile-menu__tel {
   margin-top: 302px;
   margin-bottom: 32px;
+}
+.mobile-menu__link-active {
+  font-family: $font-Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+.mobile-menu__mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+.mobile-socials {
+  display: block;
+  margin-left: 40px;
+  margin-bottom: 48px;
 }
 // End of menu
 .logo {
