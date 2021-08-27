@@ -224,7 +224,7 @@ img {
   color: #212121;
 }
 
-.mobile-menu__text::not(:first-child) {
+.mobile-menu__text:not(:first-child) {
   margin-top: 32px;
 }
 
