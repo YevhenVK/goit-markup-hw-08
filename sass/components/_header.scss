@@ -123,4 +123,10 @@
 .contact-nav__link:focus {
   color: $accent-color;
 }
+@media (max-width: 767px) {
+  .site-nav,
+  .contact-nav {
+    display: none;
+  }
+}
 // End of Header

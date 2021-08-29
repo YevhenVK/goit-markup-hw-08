@@ -1,14 +1,15 @@
 // Main
 .post {
-  display: flex;
-  min-height: 600px;
+  padding-bottom: 118px;
+  padding-top: 118px;
   max-width: 1600px;
-  background-color: $secondary-background-color;
+  height: 400px;
   margin-right: auto;
   margin-left: auto;
   align-items: center;
   justify-content: center;
   text-align: center;
+  background-color: $secondary-background-color;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -17,19 +18,33 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../img/Header.jpg");
-  width: 100%;
-}
-.post__title {
-  margin: 0 auto;
-  color: $secondary-text-color;
-  @extend %font-900-44px;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  max-width: 696px;
-  margin-bottom: 30px;
+    url("../img/mobile/bg-main.jpg");
+  @media screen and (min-width: 768px) {
+    //  пусто
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
+.post__title {
+  margin-left: auto;
+  margin-right: auto;
+  color: $secondary-text-color;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.61;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  max-width: 360px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    max-width: 696px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
 .post__button {
   color: $secondary-text-color;
   background-color: $accent-color;
@@ -52,3 +67,4 @@
     border-radius: 4px;
   }
 }
+// End hero
