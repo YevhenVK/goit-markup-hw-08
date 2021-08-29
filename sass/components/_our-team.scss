@@ -3,20 +3,52 @@
   color: $title-text-color;
   background-color: $background-team-color;
 }
+.members__team {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.members__data {
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+    max-width: 450px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    min-width: 354px;
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+}
+.members__data:not(:first-child) {
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+    margin-top: 30px;
+  }
+}
 .members__title {
   @extend %font-700-36px;
   text-align: center;
   letter-spacing: 0.03em;
   margin-top: 0;
   margin-bottom: 50px;
-}
-.members__team {
-  display: flex;
-  justify-content: space-between;
+  @media screen and (min-width: 480px) and (min-width: 1199px) {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+  }
 }
 .personal-card {
-  display: block;
-  padding: 30px 32px;
+  padding: 30px 122px 24px;
+  @media screen and (min-width: 768px) {
+    padding: 30px 74px 24px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 30px 32px;
+  }
   box-shadow: $card-shadow;
   border-radius: 0px 0px 4px 4px;
   background-color: $primary-background-color;
@@ -39,6 +71,7 @@
   display: flex;
   margin-top: 16px;
 }
+
 .social__page:not(:last-child) {
   margin-right: 10px;
 }

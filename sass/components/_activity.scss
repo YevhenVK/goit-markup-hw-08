@@ -1,6 +1,9 @@
 // Чем мы занимаемся
 .section-employment {
   padding-bottom: 94px;
+  @media (max-width: 1199px) {
+    display: none;
+  }
 }
 .section-employment__occupation {
   color: $title-text-color;
