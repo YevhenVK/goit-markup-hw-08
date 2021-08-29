@@ -1,12 +1,13 @@
 @import "./utils/extend";
 @import "./utils/variables";
-@import "./components/container-mobile";
-// @import "./base/all-styles";
+@import "./base/all-styles";
 @import "./components/logo";
-@import "./components/header";
-// @import "./components/hero";
 @import "./components/modal";
+@import "./components/header";
+@import "./components/modal-menu";
 @import "./components/details";
+// @import "./components/hero";
+@import "./components/container-mobile";
 // @import "./components/activity";
 // @import "./components/our-team";
 // @import "./components/clients";

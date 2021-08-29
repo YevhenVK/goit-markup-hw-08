@@ -1,0 +1,134 @@
+// Modal menu
+.menu-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+    0px 1px 3px rgba(0, 0, 0, 0.16);
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 250ms $cubic-bezier;
+}
+.menu-container.is-open {
+  transform: translateX(0%);
+}
+.menu-button {
+  min-height: 40px;
+  min-width: 40px;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+.header-page__con {
+  position: relative;
+}
+.js-open-menu {
+  position: absolute;
+  top: 10px;
+  right: 2px;
+  margin: 0;
+}
+.js-close-menu {
+  position: absolute;
+  top: 10px;
+  right: 2px;
+  margin: 0;
+}
+@media (max-width: 767px) {
+  .site-nav,
+  .contact-nav {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .menu-button,
+  .menu-container {
+    display: none;
+  }
+}
+
+.menu-button__close,
+.menu-button__menu {
+  fill: currentColor;
+  transition: color 250ms $cubic-bezier;
+}
+.menu-button__close:active,
+.menu-button__menu:active {
+  color: $accent-color;
+}
+
+// Меню текст
+.menu-box {
+  padding: 48px 40px;
+  justify-content: space-between;
+}
+.mobile-socials {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.mobile-menu__item {
+  display: block;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  &:first-child {
+    padding-top: 0;
+  }
+}
+.mobile-menu__nav {
+  display: block;
+  font-family: $font-Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: $title-text-color;
+}
+.mobile-menu:nth-child(2) {
+  margin-top: 60%;
+}
+.mobile-menu__tel {
+  font-family: $font-Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+.mobile-menu__mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+.mobile-socials__link {
+  margin: 0;
+  padding-left: 9px;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  font-family: $font-Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+  &:last-child {
+    border-right: none;
+  }
+  &:first-child {
+    padding-left: 0;
+  }
+}
+// End of menu
