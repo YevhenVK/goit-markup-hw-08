@@ -140,24 +140,6 @@ img {
   color: #2196f3;
 }
 
-.logo {
-  color: #000000;
-  font-family: "Raleway";
-  font-style: normal;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.logo:hover, .logo:focus {
-  color: #2196f3;
-}
-
-.logo-text {
-  color: #2196f3;
-}
-
 .menu-container {
   position: fixed;
   top: 0;
@@ -195,6 +177,10 @@ img {
   border: none;
   border-radius: 50%;
   outline: none;
+}
+
+.header-page__con {
+  position: relative;
 }
 
 .js-open-menu {
@@ -322,6 +308,82 @@ img {
   padding-left: 0;
 }
 
+.post {
+  padding-bottom: 118px;
+  padding-top: 118px;
+  max-width: 1600px;
+  height: 400px;
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  background-color: #2f303a;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/mobile/bg-main.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/mobile/bg-main.jpg");
+}
+
+@media screen and (min-width: 1200px) {
+  .post {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.post__title {
+  margin-left: auto;
+  margin-right: auto;
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.61;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  max-width: 360px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .post__title {
+    max-width: 696px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
+.post__button {
+  color: #ffffff;
+  background-color: #2196f3;
+  margin-bottom: 0;
+  font-family: inherit;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 200px;
+  padding: 10px 32px;
+  border-radius: 4px;
+  letter-spacing: 0.06em;
+  border: none;
+  cursor: pointer;
+}
+
+.post__button:focus, .post__button:hover {
+  background-color: #188ce8;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
 .logo {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -342,8 +404,22 @@ img {
   }
 }
 
-.header-page__con {
-  position: relative;
+.logo {
+  color: #000000;
+  font-family: "Raleway";
+  font-style: normal;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logo:hover, .logo:focus {
+  color: #2196f3;
+}
+
+.logo-text {
+  color: #2196f3;
 }
 
 @media screen and (min-width: 768px) {
@@ -535,82 +611,6 @@ img {
   color: #2196f3;
 }
 
-.post {
-  padding-bottom: 118px;
-  padding-top: 118px;
-  max-width: 1600px;
-  height: 400px;
-  margin-right: auto;
-  margin-left: auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-  background-color: #2f303a;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/mobile/bg-main.jpg");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/mobile/bg-main.jpg");
-}
-
-@media screen and (min-width: 1200px) {
-  .post {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
-.post__title {
-  margin-left: auto;
-  margin-right: auto;
-  color: #ffffff;
-  font-weight: 900;
-  font-size: 26px;
-  line-height: 1.61;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  max-width: 360px;
-  margin-bottom: 30px;
-}
-
-@media screen and (min-width: 1200px) {
-  .post__title {
-    max-width: 696px;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-  }
-}
-
-.post__button {
-  color: #ffffff;
-  background-color: #2196f3;
-  margin-bottom: 0;
-  font-family: inherit;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  min-width: 200px;
-  padding: 10px 32px;
-  border-radius: 4px;
-  letter-spacing: 0.06em;
-  border: none;
-  cursor: pointer;
-}
-
-.post__button:focus, .post__button:hover {
-  background-color: #188ce8;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-}
-
 /* ------ Модальное окно ------ */
 .backdrop {
   position: fixed;
@@ -659,6 +659,7 @@ img {
   padding: 0;
   margin-left: auto;
   margin-right: auto;
+  width: 370px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -956,13 +957,13 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) and (min-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
   .section__block {
     max-width: 450px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .section__block {
     min-width: 354px;
     width: calc((100% - 4 * 15px) / 2);
@@ -973,7 +974,7 @@ img {
 @media screen and (min-width: 1200px) {
   .section__block {
     margin-right: 30px;
-    min-width: 270px;
+    width: 270px;
   }
 }
 
@@ -985,6 +986,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 120px;
   margin-bottom: 30px;
   border-radius: 4px;
   -webkit-box-pack: center;
@@ -993,7 +995,6 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 120px;
   background-color: #f5f4fa;
 }
 

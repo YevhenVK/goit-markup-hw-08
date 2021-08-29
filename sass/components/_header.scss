@@ -1,16 +1,31 @@
 // Header
-// .header-page__con,
-// .header-page__nav,
-// .site-nav,
-// .contact-nav {
-//   display: flex;
-//   align-items: center;
-// }
+
+.header-page__con,
+.header-page__nav,
+.site-nav {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.header-page__con,
+.header-page__nav,
+.site-nav,
+.contact-nav {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
+}
 .header-page {
   border-bottom: 1px solid $color-border-bottom;
 
   .site-nav {
     margin-left: 93px;
+    @media (min-width: 768px) and (max-width: 1200px) {
+      margin-left: 88px;
+    }
 
     &__link {
       @extend %font-500-14px;
@@ -29,31 +44,62 @@
   }
 }
 
-.site-nav__link,
-.contact-nav__link {
+.site-nav__link {
   display: flex;
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 }
+.contact-nav__item {
+  align-items: center;
+  justify-content: center;
+  @media (min-width: 1200px) {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
 .contact-nav {
   margin-left: auto;
-
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
   &__link {
-    color: $primary-text-color;
-    @extend %font-500-14px;
     letter-spacing: 0.02em;
+    color: $primary-text-color;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: center;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.16;
+    }
+    @media screen and (min-width: 1200px) {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+    }
   }
   &__icon {
     margin-right: 10px;
     fill: currentColor;
+    @media screen and (max-width: 767px) {
+      margin-right: 0;
+    }
   }
 
-  &__item {
-    margin-right: 30px;
-
-    &:last-child {
-      margin-right: 0;
+  &__item:not(:last-child) {
+    margin-right: 0;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 10px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+      margin-right: 30px;
     }
   }
 }
