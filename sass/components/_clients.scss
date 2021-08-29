@@ -4,40 +4,31 @@
   @extend %font-700-36px;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 .business__company {
-  @media screen and (max-width: 479px) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: -15px;
-  }
-  @media screen and (min-width: 480px) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: -15px;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -15px;
   @media screen and (min-width: 1200px) {
     display: flex;
+    margin-bottom: 0;
+    margin-top: 0;
   }
 }
 .business__list {
-  @media screen and (max-width: 480px) {
-    flex-basis: calc((100% - #{60px}) / 3);
-    margin: 15px;
-  }
   @media screen and (min-width: 480px) and (max-width: 768px) {
     // min-width: 210px;
-    // width: calc((100% - 4 * 15px) / 2);
-    flex-basis: calc((100% - #{90px}) / 3);
+    width: calc((100% - 4 * 15px) / 2);
     margin: 15px;
   }
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     // min-width: 226px;
-    // width: calc((100% - 6 * 15px) / 3);
-    flex-basis: calc((100% - #{180px}) / 6);
+    width: calc((100% - 6 * 15px) / 3);
     margin: 15px;
   }
 }
