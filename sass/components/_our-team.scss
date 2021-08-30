@@ -3,16 +3,32 @@
   color: $title-text-color;
   background-color: $background-team-color;
 }
+.members__team {
+  justify-content: center;
+  margin-bottom: -30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+  }
+}
+.members__data {
+  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    margin-right: 30px;
+    flex-basis: calc((100% - #{60px}) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - #{120px}) / 4);
+    margin-bottom: 0;
+  }
+}
 .members__title {
   @extend %font-700-36px;
   text-align: center;
   letter-spacing: 0.03em;
   margin-top: 0;
   margin-bottom: 50px;
-}
-.members__team {
-  display: flex;
-  justify-content: space-between;
 }
 .personal-card {
   display: block;
@@ -37,6 +53,7 @@
 
 .social {
   display: flex;
+  justify-content: center;
   margin-top: 16px;
 }
 .social__page:not(:last-child) {
@@ -57,6 +74,7 @@
   background-color: $accent-color;
   fill: $primary-background-color;
 }
+
 // .members {
 //   color: $title-text-color;
 //   background-color: $background-team-color;
