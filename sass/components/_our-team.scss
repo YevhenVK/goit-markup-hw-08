@@ -42,7 +42,8 @@
   }
 }
 .personal-card {
-  padding: 30px 122px 24px;
+  display: block;
+  // padding: 30px 122px 24px;
   @media screen and (min-width: 768px) {
     padding: 30px 74px 24px;
   }
@@ -69,6 +70,7 @@
 
 .social {
   display: flex;
+  justify-content: center;
   margin-top: 16px;
 }
 
