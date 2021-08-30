@@ -3,53 +3,20 @@
   color: $title-text-color;
   background-color: $background-team-color;
 }
-.members__team {
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -15px;
-  }
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-.members__data {
-  @media screen and (min-width: 480px) and (max-width: 768px) {
-    max-width: 450px;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    min-width: 354px;
-    width: calc((100% - 4 * 15px) / 2);
-    margin: 15px;
-  }
-}
-.members__data:not(:first-child) {
-  @media screen and (min-width: 480px) and (max-width: 768px) {
-    margin-top: 30px;
-  }
-}
 .members__title {
   @extend %font-700-36px;
   text-align: center;
   letter-spacing: 0.03em;
   margin-top: 0;
   margin-bottom: 50px;
-  @media screen and (min-width: 480px) and (min-width: 1199px) {
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 1.17;
-  }
+}
+.members__team {
+  display: flex;
+  justify-content: space-between;
 }
 .personal-card {
   display: block;
-  // padding: 30px 122px 24px;
-  @media screen and (min-width: 768px) {
-    padding: 30px 74px 24px;
-  }
-  @media screen and (min-width: 1200px) {
-    padding: 30px 32px;
-  }
+  padding: 30px 32px;
   box-shadow: $card-shadow;
   border-radius: 0px 0px 4px 4px;
   background-color: $primary-background-color;
@@ -70,10 +37,8 @@
 
 .social {
   display: flex;
-  justify-content: center;
   margin-top: 16px;
 }
-
 .social__page:not(:last-child) {
   margin-right: 10px;
 }
@@ -92,3 +57,96 @@
   background-color: $accent-color;
   fill: $primary-background-color;
 }
+// .members {
+//   color: $title-text-color;
+//   background-color: $background-team-color;
+// }
+// .members__team {
+//   @media screen and (min-width: 768px) {
+//     display: flex;
+//     flex-wrap: wrap;
+//     margin: -15px;
+//   }
+//   @media screen and (min-width: 1200px) {
+//     display: flex;
+//     justify-content: space-between;
+//   }
+// }
+// .members__data {
+//   @media screen and (min-width: 480px) and (max-width: 768px) {
+//     max-width: 450px;
+//   }
+//   @media screen and (min-width: 768px) and (max-width: 1199px) {
+//     min-width: 354px;
+//     width: calc((100% - 4 * 15px) / 2);
+//     margin: 15px;
+//   }
+// }
+// .members__data:not(:first-child) {
+//   @media screen and (min-width: 480px) and (max-width: 768px) {
+//     margin-top: 30px;
+//   }
+// }
+// .members__title {
+//   @extend %font-700-36px;
+//   text-align: center;
+//   letter-spacing: 0.03em;
+//   margin-top: 0;
+//   margin-bottom: 50px;
+//   @media screen and (min-width: 480px) and (min-width: 1199px) {
+//     font-weight: 700;
+//     font-size: 28px;
+//     line-height: 1.17;
+//   }
+// }
+// .personal-card {
+//   display: block;
+//   padding: 30px 32px;
+//   // padding: 30px 122px 24px;
+//   @media screen and (min-width: 768px) {
+//     padding: 30px 74px 24px;
+//   }
+//   @media screen and (min-width: 1200px) {
+//   }
+//   box-shadow: $card-shadow;
+//   border-radius: 0px 0px 4px 4px;
+//   background-color: $primary-background-color;
+// }
+
+// .personal-card__heading {
+//   @extend %font-500-16px;
+//   text-align: center;
+//   letter-spacing: 0.03em;
+//   margin-bottom: 10px;
+// }
+// .personal-card__label {
+//   @extend %font-400-16px;
+//   text-align: center;
+//   letter-spacing: 0.03em;
+//   color: $primary-text-color;
+// }
+
+// .social {
+//   display: flex;
+//   justify-content: center;
+//   margin-top: 16px;
+// }
+
+// .social__page:not(:last-child) {
+//   margin-right: 10px;
+// }
+// .social__icon {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   width: 44px;
+//   height: 44px;
+//   fill: $social-text-color;
+//   border-radius: 50%;
+//   transition: background-color 250ms $cubic-bezier, fill 250ms $cubic-bezier;
+// }
+// .social__icon:hover,
+// .social__icon:focus {
+//   background-color: $accent-color;
+//   fill: $primary-background-color;
+// }
