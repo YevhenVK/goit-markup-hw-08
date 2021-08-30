@@ -6,8 +6,6 @@
   height: 400px;
   margin-right: auto;
   margin-left: auto;
-  align-items: center;
-  justify-content: center;
   text-align: center;
   background-color: $secondary-background-color;
   background-position: center;
@@ -56,31 +54,26 @@
     padding-bottom: 200px;
     max-width: 1600px;
     height: 600px;
-
     background-image: linear-gradient(
+        to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../img/desktope/bg-main.jpg");
+      url("../img/deckstope/bg-main.jpg");
     background-size: 1600px 600px;
 
     @media screen and (min-device-pixel-ratio: 1.5),
       screen and (min-resolution: 144dpi),
       screen and (min-resolution: 1.5dppx) {
       background-image: linear-gradient(
+          to right,
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url("../img/desktope/bg-main@2x.jpg");
+        url("../img/deckstope/bg-main@2x.jpg");
     }
   }
 }
-// @media screen and (min-width: 768px) {
-//   //  пусто
-// }
-// @media screen and (min-width: 1200px) {
-//   // display: flex;
-// }
 
 .post__title {
   margin-left: auto;
