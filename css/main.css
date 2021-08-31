@@ -1539,10 +1539,6 @@ img {
   }
 }
 
-.portfolio__item:not(:last-child) {
-  margin-bottom: 30px;
-}
-
 .content__item:not(:last-child) {
   margin-bottom: 30px;
 }
@@ -1609,10 +1605,6 @@ img {
   .product-thumb__text {
     padding: 63px 24px;
   }
-}
-
-.product-thumb__image {
-  width: 100vw;
 }
 
 .content__title {
