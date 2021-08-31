@@ -62,14 +62,20 @@
 
 // Меню текст
 .menu-box {
-  padding: 48px 40px;
-  justify-content: space-between;
-}
-.mobile-socials {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 48px 40px;
 }
+.mobile-socials {
+  display: block;
+}
+.mobile-information {
+  display: block;
+}
+
 .mobile-menu__item {
   display: block;
   padding-top: 16px;
@@ -88,9 +94,7 @@
   letter-spacing: 0.02em;
   color: $title-text-color;
 }
-.mobile-menu:nth-child(2) {
-  margin-top: 60%;
-}
+
 .mobile-menu__tel {
   font-family: $font-Roboto;
   font-style: normal;
@@ -107,11 +111,20 @@
   letter-spacing: 0.02em;
   color: #757575;
 }
-.mobile-socials__link {
-  margin: 0;
-  padding-left: 9px;
+.mobile-socials__list {
+  display: flex;
+}
+.mobile-socials__item:not(:last-child) {
   padding-right: 10px;
+}
+.mobile-socials__item:not(:last-child) {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+.mobile-socials__item:not(:first-child) {
+  padding-left: 10px;
+}
+.mobile-socials__link {
+  display: inline-block;
   font-family: $font-Roboto;
   font-style: normal;
   font-weight: 500;
@@ -119,12 +132,6 @@
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196f3;
-  &:last-child {
-    border-right: none;
-  }
-  &:first-child {
-    padding-left: 0;
-  }
 }
 .mobile-menu--active {
   color: $accent-color;
