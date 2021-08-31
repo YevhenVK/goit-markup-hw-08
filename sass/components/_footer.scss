@@ -111,8 +111,11 @@
   background-color: $accent-color;
 }
 // Третий блок
-.subscribe-form {
+
+.footer-container {
+  width: 100%;
   @media screen and (min-width: 1200px) {
+    width: 570px;
     margin-left: auto;
   }
 }
@@ -137,10 +140,10 @@
     flex-direction: row;
   }
 }
-.subscribe-form__label {
-  max-width: 450px;
-}
+
 .subscribe-form__input {
+  width: 100%;
+  max-width: 450px;
   margin-bottom: 20px;
   padding-left: 16px;
   padding-top: 15px;
@@ -152,7 +155,7 @@
   border-radius: 4px;
   background-color: $subscribe-background-color;
   color: $secondary-text-color;
-  @media screen and (min-width: 450px) {
+  @media screen and (min-width: 480px) {
     width: 450px;
   }
   @media screen and (min-width: 1200px) {
