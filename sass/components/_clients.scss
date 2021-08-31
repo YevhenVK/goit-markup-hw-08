@@ -13,7 +13,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: -15px;
+  margin-bottom: -30px;
+  margin-left: -30px;
   @media screen and (min-width: 1200px) {
     display: flex;
     margin-bottom: 0;
@@ -21,23 +22,19 @@
   }
 }
 .business__list {
-  @media screen and (min-width: 480px) and (max-width: 768px) {
-    // min-width: 210px;
-    width: calc((100% - 4 * 15px) / 2);
-    margin: 15px;
+  margin-left: 30px;
+  margin-top: 30px;
+  width: calc((100% - #{60px}) / 2);
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - #{90px}) / 3);
   }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    // min-width: 226px;
-    width: calc((100% - 6 * 15px) / 3);
-    margin: 15px;
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - #{180px}) / 6);
+    margin-bottom: 0;
   }
 }
 
-.business__list:not(:last-child) {
-  @media screen and (min-width: 1200px) {
-    margin-right: 30px;
-  }
-}
 .business__icon {
   height: 92px;
   display: flex;
@@ -65,3 +62,71 @@
   fill: $accent-color;
   border-color: $accent-color;
 }
+
+// // Постоянные клиенты
+// .business__heading {
+//   color: $title-text-color;
+//   @extend %font-700-36px;
+//   text-align: center;
+//   letter-spacing: 0.03em;
+//   margin-bottom: 30px;
+//   @media screen and (min-width: 1200px) {
+//     margin-bottom: 50px;
+//   }
+// }
+// .business__company {
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: center;
+//   margin: -15px;
+//   @media screen and (min-width: 1200px) {
+//     display: flex;
+//     margin-bottom: 0;
+//     margin-top: 0;
+//   }
+// }
+// .business__list {
+//   @media screen and (min-width: 480px) and (max-width: 768px) {
+//     // min-width: 210px;
+//     width: calc((100% - 4 * 15px) / 2);
+//     margin: 15px;
+//   }
+//   @media screen and (min-width: 768px) and (max-width: 1199px) {
+//     // min-width: 226px;
+//     width: calc((100% - 6 * 15px) / 3);
+//     margin: 15px;
+//   }
+// }
+
+// .business__list:not(:last-child) {
+//   @media screen and (min-width: 1200px) {
+//     margin-right: 30px;
+//   }
+// }
+// .business__icon {
+//   height: 92px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   border: 1px solid $social-text-color;
+//   box-sizing: border-box;
+//   border-radius: 4px;
+//   fill: $social-text-color;
+//   transition: fill 250ms $cubic-bezier, border-color 250ms $cubic-bezier;
+//   @media screen and (min-width: 480px) {
+//     width: 210px;
+//   }
+//   @media screen and (min-width: 768px) {
+//     width: 226px;
+//   }
+//   @media screen and (min-width: 1200px) {
+//     width: 170px;
+//   }
+// }
+// .business__icon:hover,
+// .business__icon:focus,
+// .business__emblem:hover,
+// .business__emblem:focus {
+//   fill: $accent-color;
+//   border-color: $accent-color;
+// }
