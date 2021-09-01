@@ -1539,7 +1539,7 @@ img {
   }
 }
 
-.content__item:not(:last-child) {
+.content__item:nth-child(-n + 9) {
   margin-bottom: 30px;
 }
 

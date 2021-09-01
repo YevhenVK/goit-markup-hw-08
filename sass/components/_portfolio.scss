@@ -82,7 +82,8 @@
     flex-basis: calc((100% - #{90px}) / 3);
   }
 }
-.content__item:not(:last-child) {
+
+.content__item:nth-child(-n + 9) {
   margin-bottom: 30px;
 }
 .content__link {
