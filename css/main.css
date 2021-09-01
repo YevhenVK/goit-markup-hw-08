@@ -1636,6 +1636,10 @@ img {
   }
 }
 
+.product-thumb__image {
+  width: 100vw;
+}
+
 .content__name {
   color: #212121;
   letter-spacing: 0.06em;

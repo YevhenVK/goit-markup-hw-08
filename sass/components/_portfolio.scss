@@ -144,6 +144,9 @@
     padding: 20px 24px;
   }
 }
+.product-thumb__image {
+  width: 100vw;
+}
 .content__name {
   color: $title-text-color;
   @extend %font-700-18px;
