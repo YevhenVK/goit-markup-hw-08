@@ -1090,9 +1090,14 @@ img {
   }
 }
 
+.section__block {
+  margin: 15px;
+}
+
 @media screen and (min-width: 480px) and (max-width: 768px) {
   .section__block {
     max-width: 450px;
+    width: calc((100% - 2 * 15px) / 1);
   }
 }
 
@@ -1100,19 +1105,13 @@ img {
   .section__block {
     min-width: 354px;
     width: calc((100% - 4 * 15px) / 2);
-    margin: 15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .section__block {
-    margin-right: 30px;
     width: 270px;
   }
-}
-
-.section__block:not(:last-child) {
-  margin-bottom: 30px;
 }
 
 .concern {

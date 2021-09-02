@@ -10,22 +10,20 @@
   }
 }
 .section__block {
+  margin: 15px;
   @media screen and (min-width: 480px) and (max-width: 768px) {
     max-width: 450px;
+    width: calc((100% - 2 * 15px) / 1);
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     min-width: 354px;
     width: calc((100% - 4 * 15px) / 2);
-    margin: 15px;
   }
   @media screen and (min-width: 1200px) {
-    margin-right: 30px;
     width: 270px;
   }
 }
-.section__block:not(:last-child) {
-  margin-bottom: 30px;
-}
+
 .concern {
   display: flex;
   height: 120px;
