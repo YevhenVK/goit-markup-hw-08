@@ -650,9 +650,7 @@ img {
 }
 
 .site-nav__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -661,7 +659,6 @@ img {
 }
 
 .contact-nav__item {
-  display: block;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -678,10 +675,26 @@ img {
   }
 }
 
+.contact-nav__link {
+  display: block;
+}
+
 @media (min-width: 1200px) {
   .contact-nav__link {
     padding-top: 32px;
     padding-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact-nav__mail {
+    padding-top: 21px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact-nav__phone {
+    padding-bottom: 21px;
   }
 }
 
