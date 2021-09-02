@@ -1668,7 +1668,8 @@ img {
 .footer-page {
   display: block;
   width: 100%;
-  padding: 60px 15px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #2f303a;
 }
 
