@@ -51,10 +51,15 @@
   padding-bottom: 32px;
 }
 .contact-nav__item {
+  display: block;
   align-items: center;
   justify-content: center;
   @media (min-width: 1200px) {
     display: flex;
+  }
+}
+.contact-nav__link {
+  @media (min-width: 1200px) {
     padding-top: 32px;
     padding-bottom: 32px;
   }
