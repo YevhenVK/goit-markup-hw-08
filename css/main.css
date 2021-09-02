@@ -1444,7 +1444,7 @@ img {
   border-radius: 4px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .filter__buttons:not(:first-child) {
     margin-left: 8px;
   }
@@ -1456,6 +1456,7 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-top: 0;
   }
 }
 
