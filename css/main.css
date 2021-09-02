@@ -880,7 +880,11 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.menu-button__close:focus,
+.menu-button__close:hover,
 .menu-button__close:active,
+.menu-button__menu:focus,
+.menu-button__menu:hover,
 .menu-button__menu:active {
   color: #2196f3;
 }
@@ -1355,7 +1359,6 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: -30px;
   margin-left: -30px;
 }
 
@@ -1364,7 +1367,6 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-bottom: 0;
     margin-top: 0;
   }
 }

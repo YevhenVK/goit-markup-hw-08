@@ -57,7 +57,11 @@
   fill: currentColor;
   transition: color 250ms $cubic-bezier;
 }
+.menu-button__close:focus,
+.menu-button__close:hover,
 .menu-button__close:active,
+.menu-button__menu:focus,
+.menu-button__menu:hover,
 .menu-button__menu:active {
   color: $accent-color;
 }
