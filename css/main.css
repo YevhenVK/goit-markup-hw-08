@@ -592,7 +592,7 @@ img {
 }
 
 /* ---------------------------- */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 450px) {
   .modal__square-icon {
     width: 14px;
     height: 12px;
