@@ -606,6 +606,18 @@ img {
 
 @media screen and (max-width: 390px) {
   .modal__square-icon {
+    width: 12px;
+    height: 10px;
+  }
+  .modal__agreement,
+  .modal__link {
+    font-size: 9px;
+    line-height: 8px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .modal__square-icon {
     width: 10px;
     height: 10px;
   }
