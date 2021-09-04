@@ -11,6 +11,9 @@
     flex-wrap: wrap;
     margin-right: -30px;
   }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 }
 .members__data {
   margin-bottom: 30px;

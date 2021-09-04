@@ -1318,6 +1318,12 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .members__team {
+    margin-bottom: 0;
+  }
+}
+
 .members__data {
   margin-bottom: 30px;
 }
@@ -1690,6 +1696,12 @@ img {
   opacity: 0;
 }
 
+@media screen and (min-width: 320px) {
+  .product-thumb__text {
+    padding: 20px 10px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .product-thumb__text {
     padding: 49px 24px;
@@ -1761,9 +1773,9 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -ms-flex-pack: distribute;
